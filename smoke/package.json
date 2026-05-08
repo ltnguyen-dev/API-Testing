@@ -1,0 +1,21 @@
+{
+  "name": "smoke",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "smoke": "jest --testPathPatterns=tests/smoke",
+    "smoke:watch": "jest --testPathPatterns=tests/smoke --watch",
+    "smoke:report": "jest --testPathPatterns=tests/smoke --json --outputFile=reports/results.json"
+  },
+  "devDependencies": {
+    "axios": "^1.16.0",
+    "dotenv": "^17.4.2",
+    "jest": "^30.4.1",
+    "newman": "^6.2.2",
+    "newman-reporter-htmlextra": "^1.23.1"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.20"
+  }
+}
